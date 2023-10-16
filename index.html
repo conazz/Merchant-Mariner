@@ -15,25 +15,111 @@
     />
   </head>
   <body>
+    <!-- green circle -->
     <div id="big-circle"></div>
+    <!-- intro text -->
     <div class="intro-container">
-      <div class="intro-text non-member">
+      <div id="non-member" class="intro-text">
         <h1 class="welcome-title">New here?</h1>
         <p class="welcome-note">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nostrum
           ratione commodi? Nemo quaerat, optio expedita aut facere reprehenderit
           odio, dolorem numquam ex quae illo error! Provident ab sunt magni.
         </p>
-        <button id="signup" class="btn toggle">Sign up</button>
+        <button id="toggle-signup" class="btn">Sign up</button>
       </div>
-      <div class="intro-text member">
+      <div id="member" class="intro-text">
         <h1 class="welcome-title">New here?</h1>
         <p class="welcome-note">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nostrum
           ratione commodi? Nemo quaerat, optio expedita aut facere reprehenderit
           odio, dolorem numquam ex quae illo error! Provident ab sunt magni.
         </p>
-        <button id="signin" class="btn toggle">Sign in</button>
+        <button id="toggle-signin" class="btn">Sign in</button>
+      </div>
+    </div>
+    <div class="container-form">
+      <!-- sign up form -->
+      <div id="sign-up" class="form">
+        <h1>Sign up</h1>
+        <div class="input-field">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" name="username" id="username" placeholder="Username" required/>
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" name="email" id="email" placeholder="Email" required/>
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-key"></i>
+          <input type="password" name="password" id="password" placeholder="Password" required/>
+        </div>
+        <button type="submit" class="btn">Sign up</button>
+        <p>Or sign up with social platforms</p>
+        <div class="social-medias">
+          <a href="#">
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social-icons">
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social-icons">
+                <i class="fa-brands fa-google"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social-icons">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- sign in form -->
+      <div id="sign-in" class="form">
+        <div id="sign-ui" class="form">
+            <h1>Sign in</h1>
+            <div class="input-field">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" name="username" id="username" placeholder="Username" required/>
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" name="email" id="email" placeholder="Email" required/>
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-key"></i>
+              <input type="password" name="password" id="password" placeholder="Password" required/>
+            </div>
+            <button type="submit" class="btn">Sign up</button>
+            <p>Or sign up with social platforms</p>
+            <div class="social-medias">
+              <a href="#">
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+              </a>
+              <a href="#">
+                <div class="social-icons">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+              </a>
+              <a href="#">
+                <div class="social-icons">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+              </a>
+              <a href="#">
+                <div class="social-icons">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </a>
+            </div>
+          </div>
       </div>
     </div>
     <script src="./index.js"></script>
