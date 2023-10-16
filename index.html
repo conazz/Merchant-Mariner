@@ -26,101 +26,134 @@
           ratione commodi? Nemo quaerat, optio expedita aut facere reprehenderit
           odio, dolorem numquam ex quae illo error! Provident ab sunt magni.
         </p>
-        <button id="toggle-signup" class="btn">Sign up</button>
+        <button id="toggle-signup" class="btn toggle-btn" onclick="toggleSignUp()">Sign up</button>
       </div>
-      <div id="member" class="intro-text">
+      <div id="member" class="intro-text hide-right">
         <h1 class="welcome-title">New here?</h1>
         <p class="welcome-note">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nostrum
           ratione commodi? Nemo quaerat, optio expedita aut facere reprehenderit
           odio, dolorem numquam ex quae illo error! Provident ab sunt magni.
         </p>
-        <button id="toggle-signin" class="btn">Sign in</button>
+        <button id="toggle-login" class="btn toggle-btn" onclick="toggleLogIn()">Log in</button>
       </div>
     </div>
+    <!-- form fontainer -->
     <div class="container-form">
       <!-- sign up form -->
-      <div id="sign-up" class="form">
+      <div id="sign-up" class="form hide-right">
         <h1>Sign up</h1>
-        <div class="input-field">
-          <i class="fa-solid fa-user"></i>
-          <input type="text" name="username" id="username" placeholder="Username" required/>
-        </div>
-        <div class="input-field">
-          <i class="fa-solid fa-envelope"></i>
-          <input type="email" name="email" id="email" placeholder="Email" required/>
-        </div>
-        <div class="input-field">
-          <i class="fa-solid fa-key"></i>
-          <input type="password" name="password" id="password" placeholder="Password" required/>
-        </div>
-        <button type="submit" class="btn">Sign up</button>
+        <form action="/signup" method="post">
+          <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              name="signup-username"
+              id="signup-username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              type="email"
+              name="signup-email"
+              id="signup-email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-key"></i>
+            <input
+              type="password"
+              name="signup-password"
+              id="signup-password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn form-btn">Sign up</button>
+        </form>
         <p>Or sign up with social platforms</p>
         <div class="social-medias">
           <a href="#">
             <div class="social-icons">
-                <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-facebook-f"></i>
             </div>
           </a>
           <a href="#">
             <div class="social-icons">
-                <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-x-twitter"></i>
             </div>
           </a>
           <a href="#">
             <div class="social-icons">
-                <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-google"></i>
             </div>
           </a>
           <a href="#">
             <div class="social-icons">
-                <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
             </div>
           </a>
         </div>
       </div>
       <!-- sign in form -->
-      <div id="sign-in" class="form">
-        <div id="sign-ui" class="form">
-            <h1>Sign in</h1>
-            <div class="input-field">
-              <i class="fa-solid fa-user"></i>
-              <input type="text" name="username" id="username" placeholder="Username" required/>
-            </div>
-            <div class="input-field">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="email" name="email" id="email" placeholder="Email" required/>
-            </div>
-            <div class="input-field">
-              <i class="fa-solid fa-key"></i>
-              <input type="password" name="password" id="password" placeholder="Password" required/>
-            </div>
-            <button type="submit" class="btn">Sign up</button>
-            <p>Or sign up with social platforms</p>
-            <div class="social-medias">
-              <a href="#">
-                <div class="social-icons">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-              </a>
-              <a href="#">
-                <div class="social-icons">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </div>
-              </a>
-              <a href="#">
-                <div class="social-icons">
-                    <i class="fa-brands fa-google"></i>
-                </div>
-              </a>
-              <a href="#">
-                <div class="social-icons">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-              </a>
-            </div>
+      <div id="log-in" class="form">
+        <h1>Log in</h1>
+        <form action="/login" method="post">
+          <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              name="login-username"
+              id="login-username"
+              placeholder="Username"
+              required
+            />
           </div>
+          <div class="input-field">
+            <i class="fa-solid fa-key"></i>
+            <input
+              type="password"
+              name="login-password"
+              id="login-password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn form-btn">Log in</button>
+        </form>
+        <p>Or log in with social platforms</p>
+        <div class="social-medias">
+          <a href="#">
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social-icons">
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social-icons">
+              <i class="fa-brands fa-google"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social-icons">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </a>
+        </div>
       </div>
+    </div>
+    <div class="img-container">
+        <img id="ratings" src="./resources/OIG-removebg-preview.png" alt="ship's ratings">
+        <img id="officers" class="hide-right" src="./resources/ship's officers.png" alt="ship's officer">
     </div>
     <script src="./index.js"></script>
   </body>
