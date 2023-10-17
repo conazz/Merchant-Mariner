@@ -318,7 +318,7 @@ input::placeholder {
   }
 }
 
-@media screen and (max-height: 935px) {
+@media screen and (max-height: 1024px) {
   #ratings,
   #officers {
     max-height: 300px;
