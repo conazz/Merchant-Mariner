@@ -38,15 +38,6 @@ body {
   z-index: 2;
 }
 
-.intro-container {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  top: 100px;
-  z-index: 3;
-}
-
 .intro-text {
   max-width: 500px;
   width: 40vw;
@@ -54,16 +45,20 @@ body {
   color: whitesmoke;
 }
 
-#non-member {
-  position: relative;
-  left: 4vw;
+#non-member,
+#member {
+  position: absolute;
   transition: transform 3s;
+  z-index: 3;
+  top: 100px;
+}
+
+#non-member {
+  left: 4vw;
 }
 
 #member {
-  position: relative;
   right: 4vw;
-  transition: transform 3s;
 }
 
 .welcome-title {

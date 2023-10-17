@@ -18,25 +18,31 @@
     <!-- green circle -->
     <div id="big-circle"></div>
     <!-- intro text -->
-    <div class="intro-container">
-      <div id="non-member" class="intro-text">
-        <h1 class="welcome-title">New here?</h1>
-        <p class="welcome-note">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nostrum
-          ratione commodi? Nemo quaerat, optio expedita aut facere reprehenderit
-          odio, dolorem numquam ex quae illo error! Provident ab sunt magni.
-        </p>
-        <button id="toggle-signup" class="btn toggle-btn" onclick="toggleSignUp()">Sign up</button>
-      </div>
-      <div id="member" class="intro-text hide-right">
-        <h1 class="welcome-title">New here?</h1>
-        <p class="welcome-note">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nostrum
-          ratione commodi? Nemo quaerat, optio expedita aut facere reprehenderit
-          odio, dolorem numquam ex quae illo error! Provident ab sunt magni.
-        </p>
-        <button id="toggle-login" class="btn toggle-btn" onclick="toggleLogIn()">Log in</button>
-      </div>
+    <div id="non-member" class="intro-text">
+      <h1 class="welcome-title">New here?</h1>
+      <p class="welcome-note">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nostrum
+        ratione commodi? Nemo quaerat, optio expedita aut facere reprehenderit
+        odio, dolorem numquam ex quae illo error! Provident ab sunt magni.
+      </p>
+      <button
+        id="toggle-signup"
+        class="btn toggle-btn"
+        onclick="toggleSignUp()"
+      >
+        Sign up
+      </button>
+    </div>
+    <div id="member" class="intro-text hide-right">
+      <h1 class="welcome-title">New here?</h1>
+      <p class="welcome-note">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nostrum
+        ratione commodi? Nemo quaerat, optio expedita aut facere reprehenderit
+        odio, dolorem numquam ex quae illo error! Provident ab sunt magni.
+      </p>
+      <button id="toggle-login" class="btn toggle-btn" onclick="toggleLogIn()">
+        Log in
+      </button>
     </div>
     <!-- form fontainer -->
     <div class="container-form">
@@ -74,7 +80,10 @@
               oninput="handlePasswordInput('signup-password', 'password-toggle-icon')"
               required
             />
-            <i class="password-toggle-icon fa-solid fa-eye-slash" onclick="togglePasswordVisibility('signup-password', 'password-toggle-icon')"></i>
+            <i
+              class="password-toggle-icon fa-solid fa-eye-slash"
+              onclick="togglePasswordVisibility('signup-password', 'password-toggle-icon')"
+            ></i>
           </div>
           <button type="submit" class="btn form-btn">Sign up</button>
         </form>
@@ -126,7 +135,10 @@
               oninput="handlePasswordInput('login-password', 'password-toggle-icon')"
               required
             />
-            <i class="password-toggle-icon fa-solid fa-eye-slash" onclick="togglePasswordVisibility('login-password', 'password-toggle-icon')"></i>
+            <i
+              class="password-toggle-icon fa-solid fa-eye-slash"
+              onclick="togglePasswordVisibility('login-password', 'password-toggle-icon')"
+            ></i>
           </div>
           <button type="submit" class="btn form-btn">Log in</button>
         </form>
@@ -156,8 +168,17 @@
       </div>
     </div>
     <div class="img-container">
-        <img id="ratings" src="./resources/OIG-removebg-preview.png" alt="ship's ratings">
-        <img id="officers" class="hide-right" src="./resources/ship's officers.png" alt="ship's officer">
+      <img
+        id="ratings"
+        src="./resources/OIG-removebg-preview.png"
+        alt="ship's ratings"
+      />
+      <img
+        id="officers"
+        class="hide-right"
+        src="./resources/ship's officers.png"
+        alt="ship's officer"
+      />
     </div>
     <script src="./index.js"></script>
   </body>
