@@ -86,8 +86,8 @@ body {
 }
 
 .form-btn {
-    background-color: var(--mint-color2);
-    margin-bottom: 25px;
+  background-color: var(--mint-color2);
+  margin-bottom: 25px;
 }
 
 .toggle-btn {
@@ -196,7 +196,7 @@ form {
 }
 
 .input-field input[type="password"] {
-  width: 75%
+  width: 75%;
 }
 
 input::placeholder {
@@ -236,46 +236,53 @@ input::placeholder {
   border-color: var(--mint-color2);
 }
 
-.img-container {
+/* .img-container {
     width: 100%;
-    height: 300px;
     position: absolute;
     display: flex;
     bottom: 15px;
-    /* border: 1px solid black; */
     justify-content: space-between;
     z-index: 3;
+} */
+
+#ratings,
+#officers {
+  max-height: 500px;
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  transition: transform 4s;
 }
 
 #ratings {
-    margin-left: 20vw;
-    height: 35vh;
-    transition: transform 4s;
+  margin-left: 30vw;
+  height: 35vh;
 }
 
 #officers {
-    margin-right: 20vw;
-    height: 50vh;
-    transition: transform 4s;
+  right: 0;
+  margin-right: 30vw;
+  height: 50vh;
 }
 
 .show {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .hide-left {
-    transform: translateX(-500%);
+  transform: translateX(-500%);
 }
 
 .hide-right {
-    transform: translateX(500%);
+  transform: translateX(500%);
 }
 
 @media screen and (max-width: 1600px) {
   #non-member {
     left: 5vw;
   }
-  
+
   #member {
     right: 5vw;
   }
@@ -283,7 +290,7 @@ input::placeholder {
   #sign-up {
     margin-left: 5vw;
   }
-  
+
   #log-in {
     margin-right: 5vw;
     right: 0;
@@ -294,7 +301,7 @@ input::placeholder {
   #sign-up {
     margin-left: 1vw;
   }
-  
+
   #log-in {
     margin-right: 1vw;
     right: 0;
@@ -304,9 +311,16 @@ input::placeholder {
     font-size: 5rem;
     margin-bottom: 25px;
   }
-  
+
   .welcome-note {
     font-size: 2.4rem;
     margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-height: 935px) {
+  #ratings,
+  #officers {
+    max-height: 300px;
   }
 }
