@@ -184,10 +184,11 @@ form {
   color: var(--htm-color);
 }
 
-.fa-eye,
-.fa-eye-slash {
+.password-toggle-icon {
   font-size: 2rem !important;
   cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .input-field input {

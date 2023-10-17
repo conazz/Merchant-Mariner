@@ -38,6 +38,17 @@ let toggleLogIn = () => {
   }, 500);
 };
 
+function handlePasswordInput(passwordId, iconClass) {
+  const passwordInput = document.getElementById(passwordId);
+  const eyeIcons = document.querySelectorAll(`.${iconClass}`);
+
+  const hasValue = passwordInput.value.length > 0;
+
+  eyeIcons.forEach(icon => {
+      icon.style.opacity = hasValue ? 0.5 : 0;
+  });
+}
+
 let togglePasswordVisibility = (passwordId, iconClass) => {
   const passwordInput = document.getElementById(passwordId);
   const eyeIcons = document.querySelectorAll(`.${iconClass}`);
@@ -45,7 +56,7 @@ let togglePasswordVisibility = (passwordId, iconClass) => {
   passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
 
   eyeIcons.forEach(icon => {
-    icon.classList.toggle('fa-eye', passwordInput.type === 'password');
-    icon.classList.toggle('fa-eye-slash', passwordInput.type === 'text');
+    icon.classList.toggle('fa-eye-slash', passwordInput.type === 'password');
+    icon.classList.toggle('fa-eye', passwordInput.type === 'text');
   });
 };
