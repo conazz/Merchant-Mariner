@@ -37,3 +37,15 @@ let toggleLogIn = () => {
     ratings.classList.toggle("hide-left");
   }, 500);
 };
+
+let togglePasswordVisibility = (passwordId, iconClass) => {
+  const passwordInput = document.getElementById(passwordId);
+  const eyeIcons = document.querySelectorAll(`.${iconClass}`);
+
+  passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+
+  eyeIcons.forEach(icon => {
+    icon.classList.toggle('fa-eye', passwordInput.type === 'password');
+    icon.classList.toggle('fa-eye-slash', passwordInput.type === 'text');
+  });
+};
