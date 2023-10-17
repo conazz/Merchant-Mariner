@@ -44,129 +44,128 @@
         Log in
       </button>
     </div>
-    <!-- form fontainer -->
-    <div class="container-form">
-      <!-- sign up form -->
-      <div id="sign-up" class="form hide-right">
-        <h1>Sign up</h1>
-        <form action="/signup" method="post">
-          <div class="input-field">
-            <i class="fa-solid fa-user"></i>
-            <input
-              type="text"
-              name="signup-username"
-              id="signup-username"
-              placeholder="Username"
-              required
-            />
-          </div>
-          <div class="input-field">
-            <i class="fa-solid fa-envelope"></i>
-            <input
-              type="email"
-              name="signup-email"
-              id="signup-email"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="input-field">
-            <i class="fa-solid fa-key"></i>
-            <input
-              type="password"
-              name="signup-password"
-              id="signup-password"
-              placeholder="Password"
-              oninput="handlePasswordInput('signup-password', 'password-toggle-icon')"
-              required
-            />
-            <i
-              class="password-toggle-icon fa-solid fa-eye-slash"
-              onclick="togglePasswordVisibility('signup-password', 'password-toggle-icon')"
-            ></i>
-          </div>
-          <button type="submit" class="btn form-btn">Sign up</button>
-        </form>
-        <p>Or sign up with social platforms</p>
-        <div class="social-medias">
-          <a href="#">
-            <div class="social-icons">
-              <i class="fa-brands fa-facebook-f"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="social-icons">
-              <i class="fa-brands fa-x-twitter"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="social-icons">
-              <i class="fa-brands fa-google"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="social-icons">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-          </a>
+
+    <!-- sign up form -->
+    <div id="sign-up" class="form hide-right">
+      <h1>Sign up</h1>
+      <form action="/signup" method="post">
+        <div class="input-field">
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            name="signup-username"
+            id="signup-username"
+            placeholder="Username"
+            required
+          />
         </div>
-      </div>
-      <!-- sign in form -->
-      <div id="log-in" class="form">
-        <h1>Log in</h1>
-        <form action="/login" method="post">
-          <div class="input-field">
-            <i class="fa-solid fa-user"></i>
-            <input
-              type="text"
-              name="login-username"
-              id="login-username"
-              placeholder="Username"
-              required
-            />
-          </div>
-          <div class="input-field">
-            <i class="fa-solid fa-key"></i>
-            <input
-              type="password"
-              name="login-password"
-              id="login-password"
-              placeholder="Password"
-              oninput="handlePasswordInput('login-password', 'password-toggle-icon')"
-              required
-            />
-            <i
-              class="password-toggle-icon fa-solid fa-eye-slash"
-              onclick="togglePasswordVisibility('login-password', 'password-toggle-icon')"
-            ></i>
-          </div>
-          <button type="submit" class="btn form-btn">Log in</button>
-        </form>
-        <p>Or log in with social platforms</p>
-        <div class="social-medias">
-          <a href="#">
-            <div class="social-icons">
-              <i class="fa-brands fa-facebook-f"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="social-icons">
-              <i class="fa-brands fa-x-twitter"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="social-icons">
-              <i class="fa-brands fa-google"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="social-icons">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-          </a>
+        <div class="input-field">
+          <i class="fa-solid fa-envelope"></i>
+          <input
+            type="email"
+            name="signup-email"
+            id="signup-email"
+            placeholder="Email"
+            required
+          />
         </div>
+        <div class="input-field">
+          <i class="fa-solid fa-key"></i>
+          <input
+            type="password"
+            name="signup-password"
+            id="signup-password"
+            placeholder="Password"
+            oninput="handlePasswordInput('signup-password', 'password-toggle-icon')"
+            required
+          />
+          <i
+            class="password-toggle-icon fa-solid fa-eye-slash"
+            onclick="togglePasswordVisibility('signup-password', 'password-toggle-icon')"
+          ></i>
+        </div>
+        <button type="submit" class="btn form-btn">Sign up</button>
+      </form>
+      <p>Or sign up with social platforms</p>
+      <div class="social-medias">
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-google"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </a>
       </div>
     </div>
+    <!-- sign in form -->
+    <div id="log-in" class="form">
+      <h1>Log in</h1>
+      <form action="/login" method="post">
+        <div class="input-field">
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            name="login-username"
+            id="login-username"
+            placeholder="Username"
+            required
+          />
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-key"></i>
+          <input
+            type="password"
+            name="login-password"
+            id="login-password"
+            placeholder="Password"
+            oninput="handlePasswordInput('login-password', 'password-toggle-icon')"
+            required
+          />
+          <i
+            class="password-toggle-icon fa-solid fa-eye-slash"
+            onclick="togglePasswordVisibility('login-password', 'password-toggle-icon')"
+          ></i>
+        </div>
+        <button type="submit" class="btn form-btn">Log in</button>
+      </form>
+      <p>Or log in with social platforms</p>
+      <div class="social-medias">
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-google"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
     <div class="img-container">
       <img
         id="ratings"
