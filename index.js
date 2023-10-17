@@ -5,9 +5,15 @@ const signUpForm = document.getElementById("sign-up");
 const logInForm = document.getElementById("log-in");
 const ratings = document.getElementById("ratings");
 const officers = document.getElementById("officers");
+let viewportWidth = window.innerWidth;
 
 let toggleSignUp = () => {
-  bigCircle.style.transform = "translate(12%, -50%)";
+  if (viewportWidth >= 960) {
+    bigCircle.style.transform = "translate(12%, -50%)";
+  } else {
+    bigCircle.style.left = 'calc(100vw - 225px)';
+  }
+  
   setTimeout(() => {
     nonMember.classList.toggle("hide-left");
     ratings.classList.toggle("hide-left");
@@ -23,7 +29,11 @@ let toggleSignUp = () => {
 };
 
 let toggleLogIn = () => {
-  bigCircle.style.transform = "translate(-84%, -50%)";
+  if (viewportWidth >= 960) {
+    bigCircle.style.transform = "translate(-84%, -50%)";
+  } else {
+    bigCircle.style.left = '-225px';
+  }
   setTimeout(() => {
     member.classList.toggle("hide-right");
     officers.classList.toggle("hide-right");

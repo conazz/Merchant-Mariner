@@ -110,13 +110,14 @@ body {
 .form {
   width: 40vw;
   height: 80vw;
-  min-width: 432px;
+  min-width: 350px;
   max-width: 600px;
-  max-height: 600px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 2s;
 }
 
 form {
@@ -128,7 +129,6 @@ form {
 
 #sign-up,
 #log-in {
-  transition: transform 2s;
   position: absolute;
   align-self: center;
   z-index: 1;
@@ -278,6 +278,8 @@ input::placeholder {
   transform: translateX(500%);
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 1600px) {
   #non-member {
     left: 5vw;
@@ -293,7 +295,6 @@ input::placeholder {
 
   #log-in {
     margin-right: 5vw;
-    right: 0;
   }
 }
 
@@ -318,9 +319,78 @@ input::placeholder {
   }
 }
 
+@media screen and (max-width: 960px) {
+  #big-circle {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: var(--mint-color2);
+    transform: translate(0);
+    top: -225px;
+    left: -225px;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+  }
+
+  .intro-text {
+    width: 200px;
+  }
+
+  .welcome-title {
+    font-size: 3rem;
+  }
+
+  .toggle-btn {
+    width: 100px;
+    height: 35px;
+    font-size: 1.5rem;
+  }
+
+  #non-member,
+  #member {
+    transition: transform 3s;
+    z-index: 4;
+    top: 20px;
+  }
+
+  #non-member {
+    left: 0;
+  }
+
+  #member {
+    right: 0;
+  }
+
+  .welcome-note {
+    display: none;
+  }
+
+  .form {
+    left: calc(50vw - 175px);
+    z-index: 3;
+  }
+
+  #ratings {
+    margin-left: 0;
+    height: 20vh;
+  }
+
+  #officers {
+    right: 0;
+    margin-right: 0;
+    height: 25vh;
+  }
+}
+
 @media screen and (max-height: 1024px) {
+
   #ratings,
   #officers {
     max-height: 300px;
+  }
+
+  #officers {
+    bottom: -60px
   }
 }
